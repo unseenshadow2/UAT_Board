@@ -5,11 +5,11 @@
     top: 0;
     left: 0;
 	background-color: #918f8f;
+	border-radius: 25px 25px 0px 0px;
 }
 
 #page_area
 {
-	background-color: gray;
 	text-align: left;
 }
 
@@ -27,16 +27,19 @@ body
 
 #content
 {
-	width: 80%;
 	text-align: center;
 	margin: 25px auto;
-	width: 80%;
+	width: 90%;
+	border-radius: 25px;
+	background-color: gray;
+	border-bottom: 15px solid transparent
 }
 
 div.nav_bar_div
 {
 	background:green;
-	display: inline-block
+	display: inline-block;
+	border-radius: 25px;
 }
 
 button.navigator
@@ -65,6 +68,11 @@ li.navigator
 	margin: 0;
     padding: 0;
 	width: 100%;
+}
+
+li.navigator button
+{
+	border-radius: 25px;
 }
 
 li button:hover 
