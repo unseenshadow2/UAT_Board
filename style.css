@@ -43,10 +43,10 @@ button.navigator
 {
 	margin: 0;
     padding: 0;
-	background:green!important;
+	background:#004f00!important;
 	color:white;
 	border:none; 
-	padding: 14px 16px;!important;
+	padding: 14px 16px!important;
 	font: inherit;
 	/*border is optional*/
 	cursor: pointer;
@@ -69,6 +69,19 @@ li.navigator
 
 li button:hover 
 {
-    background-color: #555;
-    color: white;
+    background-color: #555!important;
+    color: white!important;
+}
+
+li button.active
+{
+	margin: 0;
+    padding: 0;
+	background:#001b7c!important;
+	color:white;
+	border:none; 
+	padding: 14px 16px!important;
+	font: inherit;
+	/*border is optional*/
+	cursor: pointer;
 }
