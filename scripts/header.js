@@ -1,8 +1,12 @@
-function SetupPage(header_id, sidebar_id, footer_id)
+function SetupPage(/*header_id, sidebar_id, footer_id*/)
 {
-	var header = document.getElementById(header_id);
+	/*var header = document.getElementById(header_id);
 	var sidebar = document.getElementById(sidebar_id);
-	var footer = document.getElementById(footer_id);
+	var footer = document.getElementById(footer_id);*/
+	
+	var header = document.getElementById("header");
+	var sidebar = document.getElementById("sidebar");
+	var footer = document.getElementById("footer");
 	
 	if (header && sidebar && footer) // Run only when we have all elements
 	{
