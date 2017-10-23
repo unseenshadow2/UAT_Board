@@ -1,9 +1,10 @@
 #header
 {
-	text-align: center;
+	text-align: left;
 	position: sticky;
     top: 0;
     left: 0;
+	background-color: #918f8f;
 }
 
 #page_area
@@ -30,6 +31,12 @@ body
 	text-align: center;
 	margin: 25px auto;
 	width: 80%;
+}
+
+div.nav_bar_div
+{
+	background:green;
+	display: inline-block
 }
 
 button.navigator
