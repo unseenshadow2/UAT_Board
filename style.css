@@ -34,7 +34,15 @@ body
 
 button.navigator
 {
-	
+	margin: 0;
+    padding: 0;
+	background:green!important;
+	color:white;
+	border:none; 
+	padding: 14px 16px;!important;
+	font: inherit;
+	/*border is optional*/
+	cursor: pointer;
 }
 
 ul.navigation 
