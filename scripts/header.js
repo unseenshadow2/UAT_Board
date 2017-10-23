@@ -15,3 +15,15 @@ function SetupPage(/*header_id, sidebar_id, footer_id*/)
 		footer.outerHTML = read_contents("/UAT_board/footer.txt");
 	}
 }
+
+// So that we can read from our server
+function read_contents ( url )
+{
+    var request = createXMLHTTPObject ( );
+
+    request.open ( 'GET', url, false );
+    request.setRequestHeader ( 'Content-Type', 'text/html' );
+    request.send ( '' );
+
+    return ( request.responseText );
+}
