@@ -32,7 +32,7 @@ body
 	width: 90%;
 	border-radius: 25px;
 	background-color: gray;
-	border-bottom: 15px solid transparent
+	border-bottom: 15px solid transparent;
 }
 
 div.nav_bar_div
