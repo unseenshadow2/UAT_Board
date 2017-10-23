@@ -15,9 +15,13 @@
 
 #footer
 {
-	position: fixed;
+	position: sticky;
     bottom: 0;
     left: 0;
+	background-color: #918f8f;
+	text-align: left;
+	border-radius: 0px 0px 25px 25px;
+	border-bottom: 15px solid transparent;
 }
 
 body
@@ -32,7 +36,6 @@ body
 	width: 90%;
 	border-radius: 25px;
 	background-color: gray;
-	border-bottom: 15px solid transparent;
 }
 
 div.nav_bar_div
