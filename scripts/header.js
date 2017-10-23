@@ -10,9 +10,13 @@ function SetupPage(/*header_id, sidebar_id, footer_id*/)
 	
 	if (header && sidebar && footer) // Run only when we have all elements
 	{
-		header.outerHTML = read_contents("/UAT_board/header.txt");
-		sidebar.outerHTML = read_contents("/UAT_board/sidebar.txt");
-		footer.outerHTML = read_contents("/UAT_board/footer.txt");
+		// header.outerHTML = read_contents("/UAT_board/header.txt");
+		// sidebar.outerHTML = read_contents("/UAT_board/sidebar.txt");
+		// footer.outerHTML = read_contents("/UAT_board/footer.txt");
+		
+		header.innerHTML = read_contents("/UAT_board/header.txt");
+		sidebar.innerHTML = read_contents("/UAT_board/sidebar.txt");
+		footer.innerHTML = read_contents("/UAT_board/footer.txt");
 	}
 }
 
