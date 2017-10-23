@@ -2,6 +2,8 @@ var homepage;
 var gamepage;
 var acspage;
 
+var basic_title = " - Anthony Parsch's UAT Board";
+
 function LoadPage(url, id)
 {
 	// Set default
