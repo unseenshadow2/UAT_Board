@@ -1,2 +1,0 @@
-<a href="/UAT_Board/index.html">Home</a>
-<a href="/UAT_Board/GameProgramming/GP_Objectives.html">Game Programming Objectives</a>

@@ -2,25 +2,30 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-		<title>Home - Anthony Parsch's UAT Board</title>
+		<title>Anthony Parsch's UAT Board</title>
 
-		<link rel="stylesheet" href="/UAT_Board/style.css"/ type="text/css">
+		<link rel="stylesheet" href="style.css" type="text/css">
 		<style></style>
 
-		<script src="/UAT_Board/scripts/header.js" defer></script>
+		<script src="scripts/IO.js" defer></script>
+		<script src="scripts/master.js" defer></script>
 		<script></script>
-		
-		<!-- <link rel="stylesheet" href="/style.css"/ type="text/css">
-		<style></style>
-
-		<script src="/scripts/header.js" defer="defer"></script>
-		<script></script> -->
 	</head>
 
-	<body onload="SetupPage()">
-		<div id="header"></div>
-		<div id="sidebar"></div>
-		Index.html
-		<div id="footer"></div>
+	<body onload="LoadPage('home.html');
+				  LoadPage('header.html', 'header');
+				  LoadPage('footer.html', 'footer');">
+
+		<div id="content"> <!-- Where everything goes -->
+		
+			<!-- Our header plus our navigation bar -->
+			<div id="header"></div>
+			
+			<!-- Where we load the code of each page into -->
+			<div id="page_area"></div>
+			
+			<!-- Where we will have our footer -->
+			<div id="footer"></div>
+		</div>
 	</body>
 </html>
