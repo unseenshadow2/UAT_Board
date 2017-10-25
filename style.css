@@ -1,3 +1,26 @@
+/*
+ * Our body of the index page
+ */
+body
+{
+	background-color: black;
+}
+
+/*
+ * The container of the three main blocks
+ */
+ #content
+{
+	text-align: center;
+	margin: 25px auto;
+	width: 90%;
+	border-radius: 25px;
+	background-color: gray;
+}
+
+/*
+ * The three main blocks
+ */
 #header
 {
 	text-align: left;
@@ -11,6 +34,7 @@
 #page_area
 {
 	text-align: left;
+	padding: 0px 10px;
 }
 
 #footer
@@ -22,21 +46,12 @@
 	text-align: left;
 	border-radius: 0px 0px 25px 25px;
 	border-bottom: 15px solid transparent;
+	padding: 0px 10px;
 }
 
-body
-{
-	background-color: black;
-}
-
-#content
-{
-	text-align: center;
-	margin: 25px auto;
-	width: 90%;
-	border-radius: 25px;
-	background-color: gray;
-}
+/*
+ * Navigation bar styling
+ */
 
 div.nav_bar_div
 {
@@ -78,13 +93,13 @@ li.navigator button
 	border-radius: 25px;
 }
 
-li button:hover 
+li.navigator button:hover 
 {
     background-color: #555!important;
     color: white!important;
 }
 
-li button.active
+li.navigator button.active
 {
 	margin: 0;
     padding: 0;
@@ -96,3 +111,33 @@ li button.active
 	/*border is optional*/
 	cursor: pointer;
 }
+
+/*
+ * Footer table
+ */
+ .footer_table
+ {
+	 width: 100%;
+ }
+ 
+ table.footer_table td
+ {
+	 /* The border exists for debugging the size of the table elements */
+	 /*border: 1px solid black;*/ 
+	 width: 33%;
+ }
+ 
+ .footer_left
+ {
+	 text-align: left;
+ }
+ 
+ .footer_center
+ {
+	 text-align: center;
+ }
+ 
+ .footer_right
+ {
+	 text-align: right;
+ }
