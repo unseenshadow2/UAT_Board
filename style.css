@@ -176,20 +176,10 @@ table.footer_table td
 	
 }
 
-/*
-.footer_right a
+.objective_text
 {
-	text-decoration:none;
-	margin: 0;
-    padding: 14px 16px;
-	background:#004f00;
-	color:white;
-	border-radius: 25px;
+	Display:inline-block;
+	vertical-align:top; 
+	min-width:100px; 
+	max-width: 40%;
 }
-
-.footer_right a:hover
-{
-	background-color: #555;
-    color: white;
-}
-*/
