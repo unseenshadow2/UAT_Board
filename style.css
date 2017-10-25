@@ -3,7 +3,14 @@
  */
 body
 {
-	background-color: black;
+	/*background-color: black;*/
+	background-image: url("images/Background.PNG");
+	background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+	background-size: cover;
+	font: "Courier New", Courier, monospace;
+	font-size: 125%;
 }
 
 /*
@@ -15,7 +22,7 @@ body
 	margin: 25px auto;
 	width: 90%;
 	border-radius: 25px;
-	background-color: gray;
+	background-color: rgba(128,128,128,0.85);
 }
 
 /*
@@ -50,9 +57,31 @@ body
 }
 
 /*
+ * Default text types
+ */
+p
+{
+	
+}
+
+h1
+{
+	text-align:center;
+}
+
+h2
+{
+	
+}
+
+h3
+{
+	
+}
+
+/*
  * Navigation bar styling
  */
-
 div.nav_bar_div
 {
 	background:green;
@@ -115,29 +144,52 @@ li.navigator button.active
 /*
  * Footer table
  */
- .footer_table
- {
-	 width: 100%;
- }
+.footer_table
+{
+	width: 100%;
+}
  
- table.footer_table td
- {
-	 /* The border exists for debugging the size of the table elements */
-	 /*border: 1px solid black;*/ 
-	 width: 33%;
- }
+table.footer_table td
+{
+	/* The border exists for debugging the size of the table elements */
+	/*border: 1px solid black;*/ 
+	width: 33%;
+}
  
- .footer_left
- {
-	 text-align: left;
- }
+.footer_left
+{
+	text-align: left;
+}
  
- .footer_center
- {
-	 text-align: center;
- }
+.footer_center
+{
+	text-align: center;
+}
  
- .footer_right
- {
-	 text-align: right;
- }
+.footer_right
+{
+	text-align: right;
+}
+
+.footer_right a
+{
+	
+}
+
+/*
+.footer_right a
+{
+	text-decoration:none;
+	margin: 0;
+    padding: 14px 16px;
+	background:#004f00;
+	color:white;
+	border-radius: 25px;
+}
+
+.footer_right a:hover
+{
+	background-color: #555;
+    color: white;
+}
+*/

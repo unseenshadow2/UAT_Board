@@ -12,6 +12,9 @@ function LoadPage(url, id)
 	var page_area = document.getElementById(id);
 	
 	page_area.innerHTML = read_contents(url);
+	
+	// Scroll to the top of the page
+	document.body.scrollTop = document.documentElement.scrollTop = 0;
 }
 
 function SetActive(button_id)
