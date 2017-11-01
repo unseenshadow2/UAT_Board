@@ -9,7 +9,7 @@ body
     background-position: left top;
     background-attachment: fixed;
 	background-size: cover;
-	font: "Courier New", Courier, monospace;
+	font: Arial, Arial, sans-serif;
 	font-size: 125%;
 }
 
@@ -22,7 +22,7 @@ body
 	margin: 25px auto;
 	width: 90%;
 	border-radius: 25px;
-	background-color: rgba(128,128,128,0.90);
+	background-color: rgba(128,128,128,0.95);
 }
 
 /*
