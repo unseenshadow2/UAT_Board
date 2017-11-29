@@ -1,0 +1,186 @@
+/*
+ * Our body of the index page
+ */
+body
+{
+	/*background-color: black;*/
+	background-image: url("images/Background.PNG");
+	background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+	background-size: cover;
+	font: Arial, Arial, sans-serif;
+	font-size: 125%;
+}
+
+/*
+ * The container of the three main blocks
+ */
+ #content
+{
+	text-align: center;
+	margin: 25px auto;
+	width: 90%;
+	border-radius: 25px;
+	background-color: rgba(128,128,128,0.95);
+}
+
+/*
+ * The three main blocks
+ */
+#header
+{
+	text-align: left;
+	position: sticky;
+    top: 0;
+    left: 0;
+	background-color: #918f8f;
+	border-radius: 25px 25px 0px 0px;
+}
+
+#page_area
+{
+	text-align: left;
+	padding: 0px 10px;
+}
+
+#footer
+{
+	position: sticky;
+    bottom: 0;
+    left: 0;
+	background-color: #918f8f;
+	text-align: left;
+	border-radius: 0px 0px 25px 25px;
+	border-bottom: 15px solid transparent;
+	padding: 0px 10px;
+}
+
+/*
+ * Default text types
+ */
+p
+{
+	
+}
+
+h1
+{
+	text-align:center;
+}
+
+h2
+{
+	
+}
+
+h3
+{
+	color: #990000;
+	text-decoration: underline;
+}
+
+/*
+ * Navigation bar styling
+ */
+div.nav_bar_div
+{
+	background:green;
+	display: inline-block;
+	border-radius: 25px;
+}
+
+button.navigator
+{
+	margin: 0;
+    padding: 0;
+	background:#004f00!important;
+	color:white;
+	border:none; 
+	padding: 14px 16px!important;
+	font: inherit;
+	/*border is optional*/
+	cursor: pointer;
+}
+
+ul.navigation 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li.navigator
+{
+    display: inline;
+	margin: 0;
+    padding: 0;
+	width: 100%;
+}
+
+li.navigator button
+{
+	border-radius: 25px;
+}
+
+li.navigator button:hover 
+{
+    background-color: #555!important;
+    color: white!important;
+}
+
+li.navigator button.active
+{
+	margin: 0;
+    padding: 0;
+	background:#001b7c!important;
+	color:white;
+	border:none; 
+	padding: 14px 16px!important;
+	font: inherit;
+	/*border is optional*/
+	cursor: pointer;
+}
+
+/*
+ * Footer table
+ */
+.footer_table
+{
+	width: 100%;
+}
+ 
+table.footer_table td
+{
+	/* The border exists for debugging the size of the table elements */
+	/*border: 1px solid black;*/ 
+	width: 33%;
+}
+ 
+.footer_left
+{
+	text-align: left;
+}
+ 
+.footer_center
+{
+	text-align: center;
+}
+ 
+.footer_right
+{
+	text-align: right;
+}
+
+.footer_right a
+{
+	
+}
+
+.objective_text
+{
+	Display:inline-block;
+	vertical-align:top; 
+	min-width:100px; 
+	max-width: 40%;
+}
