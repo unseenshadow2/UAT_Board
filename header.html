@@ -1,24 +1,25 @@
 <!-- https://www.w3schools.com/css/css_navbar.asp -->
+<script>
+	
+</script>
+
 <div class="nav_bar_div">
 	<ul class="navigation">
 		<li class="navigator">
 			<button onclick="document.title = 'Home' + basic_title;
-							 LoadPage('home.html'); 
-							 SetActive('home_button');"
+							 SetActiveAndLoad('home.html');"
 			class="navigator" id="home_button">Home</button>
 		</li>
 		
 		<li class="navigator">
 			<button onclick="document.title = 'Game Programming Objectives' + basic_title;
-							 LoadPage('GameProgramming/GP_Objectives.html');
-							 SetActive('game_button');"
+							 SetActiveAndLoad('GameProgramming/GP_Objectives.html');"
 			class="navigator" id="game_button">Game Programming</button>
 		</li>
 		
 		<li class="navigator">
 			<button onclick="document.title = 'Advancing Computer Science Objectives' + basic_title;
-							 LoadPage('AdvancingComputerScience/ACS_Objectives.html'); 
-							 SetActive('acs_button');" 
+							 SetActiveAndLoad('AdvancingComputerScience/ACS_Objectives.html');" 
 			class="navigator" id="acs_button">Advancing Computer Science</button>
 		</li>
 	</ul>

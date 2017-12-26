@@ -1,31 +1,35 @@
-var homepage;
-var gamepage;
-var acspage;
+// This file requires the IO.js file to function
+
+var indexPage = "home.html";
+var page_area = "page_area";
 
 var basic_title = " - Anthony Parsch's UAT Board";
 
-function LoadPage(url, id)
+var buttons = 
+	{
+		'home.html':'home_button',
+		'GameProgramming/GP_Objectives.html':'game_button',
+		'AdvancingComputerScience/ACS_Objectives.html':'acs_button'
+	};
+
+function SetActive(page)
 {
-	// Set default
-	id = id || "page_area";
-	
-	var page_area = document.getElementById(id);
-	
-	page_area.innerHTML = read_contents(url);
-	
-	// Scroll to the top of the page
-	document.body.scrollTop = document.documentElement.scrollTop = 0;
+	// Cleanse our active button and set our active button
+	for (var key in buttons)
+	{
+		if (page != key) ResetButtonActive(buttons[key]);
+		else SetButtonActive(buttons[key]);
+	}
 }
 
-function SetActive(button_id)
+function SetActiveAndLoad(page)
 {
-	// Cleanse our active button
-	ResetButtonActive(homepage);
-	ResetButtonActive(gamepage);
-	ResetButtonActive(acspage);
-	
-	// Set the button to active
-	var button = document.getElementById(button_id);
+	SetActive(page);
+	LoadPage(page);
+}
+
+function SetButtonActive(button)
+{
 	button.classList.add('active');
 	if (button.classList.contains('navigator')) button.classList.remove('navigator');
 }
@@ -39,9 +43,11 @@ function ResetButtonActive(button)
 	}
 }
 
-function SetupButtons()
+function SetupButtons(currentPage)
 {
-	homepage = document.getElementById("home_button");
-	gamepage = document.getElementById("game_button");
-	acspage = document.getElementById("acs_button");
+	// Update buttons from ids to actual buttons
+	for (var key in buttons) { buttons[key] = document.getElementById(buttons[key]); }
+	
+	// Update our buttons active status if we aren't on the index page
+	SetActive(currentPage);
 }

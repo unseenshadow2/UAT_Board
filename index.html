@@ -12,11 +12,9 @@
 		<script></script>
 	</head>
 
-	<body onload="LoadPage('home.html');
-				  LoadPage('header.html', 'header');
-				  LoadPage('footer.html', 'footer');
-				  SetupButtons();
-				  SetActive('home_button');">
+	<body onload="LoadIntoId('header.html', 'header');
+				  LoadIntoId('footer.html', 'footer');
+				  SetupButtons(LoadPageAtStart('page_area', indexPage));">
 
 		<div id="content"> <!-- Where everything goes -->
 		
